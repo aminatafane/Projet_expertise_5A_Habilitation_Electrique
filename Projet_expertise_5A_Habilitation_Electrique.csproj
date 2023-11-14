@@ -1,0 +1,1194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CA2233C-79C9-4A0E-9BBF-A64E01544F7B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projet_expertise_5A_Habilitation_Electrique</RootNamespace>
+    <AssemblyName>Projet_expertise_5A_Habilitation_Electrique</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\lenovo\OneDrive\Bureau\setup2\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0FD771E3F48386B8AB2B5AF06E4E98D2B013DF5E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Projet_expertise_5A_Habilitation_Electrique_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\logo %283%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A10Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A10Form.Designer.cs">
+      <DependentUpon>A10Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Armoire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Armoire.Designer.cs">
+      <DependentUpon>Armoire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comprendre le schema électrique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comprendre le schema électrique.Designer.cs">
+      <DependentUpon>Comprendre le schema électrique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cours.Designer.cs">
+      <DependentUpon>Cours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etude du schéma électrique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Etude du schéma électrique.Designer.cs">
+      <DependentUpon>Etude du schéma électrique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F2Form.Designer.cs">
+      <DependentUpon>F2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fiche_pratique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiche_pratique.Designer.cs">
+      <DependentUpon>Fiche_pratique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOLIO003.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOLIO003.Designer.cs">
+      <DependentUpon>FOLIO003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOLIO004.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOLIO004.Designer.cs">
+      <DependentUpon>FOLIO004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOLIO005.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOLIO005.Designer.cs">
+      <DependentUpon>FOLIO005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOLIO006.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOLIO006.Designer.cs">
+      <DependentUpon>FOLIO006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOLIO007.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOLIO007.Designer.cs">
+      <DependentUpon>FOLIO007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formation_Théorique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formation_Théorique.Designer.cs">
+      <DependentUpon>Formation_Théorique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Habilis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Habilis.Designer.cs">
+      <DependentUpon>Habilis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Habilitation_Electrique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Habilitation_Electrique.Designer.cs">
+      <DependentUpon>Habilitation_Electrique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KAForm.Designer.cs">
+      <DependentUpon>KAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KM1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KM1Form.Designer.cs">
+      <DependentUpon>KM1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KM2122Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KM2122Form.Designer.cs">
+      <DependentUpon>KM2122Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KM3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KM3Form.Designer.cs">
+      <DependentUpon>KM3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Malaxeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Malaxeur.Designer.cs">
+      <DependentUpon>Malaxeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="partie commande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="partie commande.Designer.cs">
+      <DependentUpon>partie commande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pupitre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pupitre.Designer.cs">
+      <DependentUpon>Pupitre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Q10Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q10Form.Designer.cs">
+      <DependentUpon>Q10Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Q1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q1Form.Designer.cs">
+      <DependentUpon>Q1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Q2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q2Form.Designer.cs">
+      <DependentUpon>Q2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Q3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Q3Form.Designer.cs">
+      <DependentUpon>Q3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reconnaissance du matériel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reconnaissance du matériel.Designer.cs">
+      <DependentUpon>Reconnaissance du matériel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreB0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreB0.Designer.cs">
+      <DependentUpon>ScoreB0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreB1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreB1.Designer.cs">
+      <DependentUpon>ScoreB1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreB2.Designer.cs">
+      <DependentUpon>ScoreB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreBC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreBC.Designer.cs">
+      <DependentUpon>ScoreBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreBR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreBR.Designer.cs">
+      <DependentUpon>ScoreBR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TacheB0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TacheB0.Designer.cs">
+      <DependentUpon>TacheB0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TacheB1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TacheB1.Designer.cs">
+      <DependentUpon>TacheB1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TacheB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TacheB2.Designer.cs">
+      <DependentUpon>TacheB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TacheBC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TacheBC.Designer.cs">
+      <DependentUpon>TacheBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TacheBR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TacheBR.Designer.cs">
+      <DependentUpon>TacheBR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestB0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestB0.Designer.cs">
+      <DependentUpon>TestB0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestB1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestB1.Designer.cs">
+      <DependentUpon>TestB1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestB2.Designer.cs">
+      <DependentUpon>TestB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestBC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestBC.Designer.cs">
+      <DependentUpon>TestBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestBR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestBR.Designer.cs">
+      <DependentUpon>TestBR.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="A10Form.resx">
+      <DependentUpon>A10Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Armoire.resx">
+      <DependentUpon>Armoire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comprendre le schema électrique.resx">
+      <DependentUpon>Comprendre le schema électrique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cours.resx">
+      <DependentUpon>Cours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etude du schéma électrique.resx">
+      <DependentUpon>Etude du schéma électrique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F2Form.resx">
+      <DependentUpon>F2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fiche_pratique.resx">
+      <DependentUpon>Fiche_pratique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOLIO003.resx">
+      <DependentUpon>FOLIO003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOLIO004.resx">
+      <DependentUpon>FOLIO004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOLIO005.resx">
+      <DependentUpon>FOLIO005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOLIO006.resx">
+      <DependentUpon>FOLIO006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOLIO007.resx">
+      <DependentUpon>FOLIO007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formation_Théorique.resx">
+      <DependentUpon>Formation_Théorique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Habilis.resx">
+      <DependentUpon>Habilis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Habilitation_Electrique.resx">
+      <DependentUpon>Habilitation_Electrique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KAForm.resx">
+      <DependentUpon>KAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KM1Form.resx">
+      <DependentUpon>KM1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KM2122Form.resx">
+      <DependentUpon>KM2122Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KM3Form.resx">
+      <DependentUpon>KM3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Malaxeur.resx">
+      <DependentUpon>Malaxeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="partie commande.resx">
+      <DependentUpon>partie commande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Pupitre.resx">
+      <DependentUpon>Pupitre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q10Form.resx">
+      <DependentUpon>Q10Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q1Form.resx">
+      <DependentUpon>Q1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q2Form.resx">
+      <DependentUpon>Q2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Q3Form.resx">
+      <DependentUpon>Q3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reconnaissance du matériel.resx">
+      <DependentUpon>Reconnaissance du matériel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScoreB0.resx">
+      <DependentUpon>ScoreB0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScoreB1.resx">
+      <DependentUpon>ScoreB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScoreB2.resx">
+      <DependentUpon>ScoreB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScoreBC.resx">
+      <DependentUpon>ScoreBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScoreBR.resx">
+      <DependentUpon>ScoreBR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TacheB0.resx">
+      <DependentUpon>TacheB0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TacheB1.resx">
+      <DependentUpon>TacheB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TacheB2.resx">
+      <DependentUpon>TacheB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TacheBC.resx">
+      <DependentUpon>TacheBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TacheBR.resx">
+      <DependentUpon>TacheBR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestB0.resx">
+      <DependentUpon>TestB0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestB1.resx">
+      <DependentUpon>TestB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestB2.resx">
+      <DependentUpon>TestB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestBC.resx">
+      <DependentUpon>TestBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestBR.resx">
+      <DependentUpon>TestBR.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Projet_expertise_5A_Habilitation_Electrique_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Altivar 28.pdf" />
+    <None Include="Resources\B0V_Tache T1.pdf" />
+    <None Include="Resources\B0V_Tache T2.pdf" />
+    <None Include="Resources\B1V_Tache T1.pdf" />
+    <None Include="Resources\B1V_Tache T2.pdf" />
+    <None Include="Resources\B1V_Tache T3.pdf" />
+    <None Include="Resources\B1V_Tache T4.pdf" />
+    <None Include="Resources\B2V_Tache T1.pdf" />
+    <None Include="Resources\B2V_Tache T2.pdf" />
+    <None Include="Resources\B2V_Tache T3.pdf" />
+    <None Include="Resources\B2V_Tache T4.pdf" />
+    <None Include="Resources\B2V_Tache T5.pdf" />
+    <None Include="Resources\B2V_Tache T6.pdf" />
+    <None Include="Resources\B2V_Tache T7.pdf" />
+    <None Include="Resources\BC_Tache T1.pdf" />
+    <None Include="Resources\BC_Tache T2.pdf" />
+    <None Include="Resources\BC_Tache T3.pdf" />
+    <None Include="Resources\BC_Tache T4.pdf" />
+    <None Include="Resources\BC_Tache T5.pdf" />
+    <None Include="Resources\BR_Tache T1.pdf" />
+    <None Include="Resources\BR_Tache T2.pdf" />
+    <None Include="Resources\BR_Tache T3.pdf" />
+    <None Include="Resources\BR_Tache T4.pdf" />
+    <None Include="Resources\BR_Tache T5.pdf" />
+    <None Include="Resources\BR_Tache T6.pdf" />
+    <None Include="Resources\BR_Tache T7.pdf" />
+    <None Include="Resources\chap2.pdf" />
+    <None Include="Resources\chap3.pdf" />
+    <None Include="Resources\chap4.pdf" />
+    <None Include="Resources\chap5.pdf" />
+    <None Include="Resources\CHAP6.pdf" />
+    <None Include="Resources\chap7.pdf" />
+    <None Include="Resources\chap71.pdf" />
+    <None Include="Resources\chap72.pdf" />
+    <None Include="Resources\chap73.pdf" />
+    <None Include="Resources\chap74.pdf" />
+    <None Include="Resources\chap75.pdf" />
+    <None Include="Resources\chapitr1.pdf" />
+    <None Include="Resources\Constituants de protection_Disjoncteurs-moteurs magnéto-thermiques.pdf" />
+    <None Include="Resources\Constituants de protection_Relais tripolaires de protection thermique.pdf" />
+    <None Include="Resources\Constituants de protection_Sectionneurs.pdf" />
+    <None Include="Resources\Contacteurs auxiliaires.pdf" />
+    <None Include="Resources\Contacteurs.pdf" />
+    <None Include="Resources\description du système.pdf" />
+    <None Include="Resources\Disjoncteurs Compact NS100 à NS630.pdf" />
+    <None Include="Resources\Disjoncteurs différentiels DPN Vigi.pdf" />
+    <None Include="Resources\GV2L04_document.pdf" />
+    <None Include="Resources\Habilis_NT_IE02-pages-2-pages-1.pdf" />
+    <None Include="Resources\Notice.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analyse du risque.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consignation.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DANGER COURANT.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\électrique ordre .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exécutant b0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hab elec BE manoeuvre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\habilitation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interventions Basse Tension.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\la reglemention.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MATERIEL SECURIT2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\operations.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RISQUE ELECTRIQUE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electrical back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ptt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\def.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hom.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\def1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hom1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hom2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\def2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hom3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\def3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hom4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armoire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20221220_182109.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20221220_182059.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armoireDZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q1a.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q10A.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q2A.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q3A.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KKM1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\km21-22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KMM3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KAA.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malaxeur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pupitre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electrical back1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pupitreDZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malaxeur1.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malaxeur2.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malaxeur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20221026_190948.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q1F.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20221026_1909481.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20221220_182013.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q2Z.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20221220_182021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KM1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KM2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KM3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A10Z.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FOLIO_003.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FOLIO_004.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FOLIO_005.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FOLIO_006.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FOLIO_007.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background2e.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BS1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB051.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB018.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB022.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB023.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB027.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASEB031.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zone_png.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for_theo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnB0.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnB1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnB2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBC.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBR.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BALISAGE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case9B2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE39.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHOI1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHOI2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHOI3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHOI4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHOI5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHOI6.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLASSE1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classe3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLASSE22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLASSEE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLASSER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLASSES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Multiplephoto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VAT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matériel 25 .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ORAGE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casque isolant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casquette.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chaussure isolant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gants.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lunettes uv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vetement de travail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1 17 .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balisage 28 29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balisage-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bAt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case 11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case 13 14 15 19 23 24 25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE 20 21 B1V.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case 22 habilité b1 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case6 7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DDR 8.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equipe habilitation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipement de protection.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Habilitaion .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HABILITAION CASE 18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malt 27 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matériel 25 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scotch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vat 26 .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bcC 39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc 12 13 14 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC 15 26 29 40.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC 17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC 18.JPEG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC 19 21.JPEG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC 20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC 22 24 30 41.JPEG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC 23 27 28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC 25. PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC 31 32.JPEG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC 33 34 35 36 38.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC 37.JPEG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CASE27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suivant.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo %283%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\11.PNG" />
+    <Content Include="Resources\12.PNG" />
+    <Content Include="Resources\13.PNG" />
+    <Content Include="Resources\coure.png" />
+    <Content Include="Resources\ecacc.PNG" />
+    <Content Include="Resources\elec1.PNG" />
+    <Content Include="Resources\elec11.PNG" />
+    <Content Include="Resources\elec110.PNG" />
+    <Content Include="Resources\elec112.PNG" />
+    <Content Include="Resources\elec113.PNG" />
+    <Content Include="Resources\elec114.PNG" />
+    <Content Include="Resources\elec115.PNG" />
+    <Content Include="Resources\elec116.PNG" />
+    <Content Include="Resources\elec117.PNG" />
+    <Content Include="Resources\elec118.PNG" />
+    <Content Include="Resources\elec119.PNG" />
+    <Content Include="Resources\elec12.PNG" />
+    <Content Include="Resources\elec120.PNG" />
+    <Content Include="Resources\elec121.PNG" />
+    <Content Include="Resources\elec122.PNG" />
+    <Content Include="Resources\elec123.PNG" />
+    <Content Include="Resources\elec124.PNG" />
+    <Content Include="Resources\elec125.PNG" />
+    <Content Include="Resources\elec126.PNG" />
+    <Content Include="Resources\elec13.PNG" />
+    <Content Include="Resources\elec14.PNG" />
+    <Content Include="Resources\elec15.PNG" />
+    <Content Include="Resources\elec16.PNG" />
+    <Content Include="Resources\elec17.PNG" />
+    <Content Include="Resources\elec18.PNG" />
+    <Content Include="Resources\elec19.PNG" />
+    <Content Include="Resources\elect.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
